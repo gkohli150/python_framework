@@ -13,10 +13,10 @@ def interceptRequest(route):
 
 
 def test_Network_2(page: Page):
-    page.goto("https://rahulshettyacademy.com/client")
-    page.route("https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=*",interceptRequest)
-    page.get_by_placeholder("email@example.com").fill("rahulshetty@gmail.com")
-    page.get_by_placeholder("enter your passsword").fill("Iamking@000")
+    page.goto("abc")
+    page.route("abc/api/ecom/order/get-orders-details?id=*",interceptRequest)
+    page.get_by_placeholder("email@example.com").fill("xxxm")
+    page.get_by_placeholder("enter your passsword").fill("xxx")
     page.get_by_role("button", name="Login").click()
     page.get_by_role("button", name="ORDERS").click()
     page.get_by_role("button", name="View").first.click()
@@ -32,7 +32,7 @@ def test_session_storage(playwright: Playwright):
     page = context.new_page()
     #script to inject token in session local storage
     page.add_init_script(f"""localStorage.setItem('token','{getToken}')""")
-    page.goto("https://rahulshettyacademy.com/client")
+    page.goto("abct")
     page.get_by_role("button", name="ORDERS").click()
     expect(page.get_by_text('Your Orders')).to_be_visible()
 

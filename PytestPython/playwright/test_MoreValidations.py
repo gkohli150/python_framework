@@ -7,7 +7,7 @@ def test_UIChecks(page: Page):
 
 
     #hide/display and placeholder
-    page.goto("https://rahulshettyacademy.com/AutomationPractice/")
+    page.goto("")
     expect(page.get_by_placeholder("Hide/Show Example")).to_be_visible()
     page.get_by_role("button", name="Hide").click()
     expect(page.get_by_placeholder("Hide/Show Example")).to_be_hidden()

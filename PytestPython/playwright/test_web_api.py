@@ -14,7 +14,7 @@ def test_e2e_web_api(playwright: Playwright):
     api_utils = APIUtils()
     orderId = api_utils.createOrder(playwright)
     #login
-    page.goto("https://rahulshettyacademy.com/client")
+    page.goto("https://abc.com/client")
     page.get_by_placeholder("email@example.com").fill("rahulshetty@gmail.com")
     page.get_by_placeholder("enter your passsword").fill("Iamking@000")
     page.get_by_role("button", name="Login").click()

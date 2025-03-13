@@ -11,6 +11,6 @@ Feature: Order Transaction
     Then order message is successfully displayed
     Examples:
       | username                | password    |
-      | rahulshetty@gmail.com   | Iamking@000 |
+      | abc                     | xyz@000     |
 
 
