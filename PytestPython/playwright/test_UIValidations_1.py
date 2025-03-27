@@ -2,7 +2,6 @@ from playwright.sync_api import Page, expect
 
 
 def test_UIValidationDynamicScript(page:Page):
-    #iphone X, Nokia Edge -> verify 2 items are showing in cart.
     page.goto("https://abc.com/loginpagePractise/")
     page.get_by_label("Username:").fill("demy")
     page.get_by_label("Password:").fill("learning")
@@ -26,9 +25,9 @@ def test_childWindowHandle(page:Page):
         page.locator(".blinkingText").click()  # new page
         childPage = newPage_info.value
         text = childPage.locator(".red").text_content()
-        print(text) #Please email us at mentor@rahulshettyacademy.com with below template to receive response
-        words = text.split("at") #0 -> Please email us ,  1->mentor@rahulshettyacademy.com with below template to receive response
-        email = words[1].strip().split(" ")[0]    #0->mentor@rahulshettyacademy.com 1->
+        print(text) 
+        words = text.split("at") #0 -> 
+        email = words[1].strip().split(" ")[0]    #0
         assert email == "mentor@rahulshettyacademy.com"
 
 
