@@ -28,7 +28,7 @@ def test_childWindowHandle(page:Page):
         print(text) 
         words = text.split("at") #0 -> 
         email = words[1].strip().split(" ")[0]    #0
-        assert email == "mentor@rahulshettyacademy.com"
+        assert email == "abc.com"
 
 
 
