@@ -7,9 +7,9 @@ class APIUtils:
 
     def getToken(self, playwright: Playwright):
 
-        api_request_context = playwright.request.new_context(base_url="https://rahulshettyacademy.com")
+        api_request_context = playwright.request.new_context(base_url="https://abc.com")
         response = api_request_context.post("/api/ecom/auth/login",
-                                            data={"userEmail":"rahulshetty@gmail.com", "userPassword": "Iamking@000"})
+                                            data={"userEmail":"abc@gmail.com", "userPassword": "Iamking@000"})
         assert response.ok
         print(response.json())
         responseBody = response.json()
@@ -17,7 +17,7 @@ class APIUtils:
 
     def createOrder(self, playwright: Playwright):
         token = self.getToken(playwright)
-        api_request_context = playwright.request.new_context(base_url="https://rahulshettyacademy.com")
+        api_request_context = playwright.request.new_context(base_url="https://abc.com")
         response = api_request_context.post("/api/ecom/order/create-order",
                                             data=ordersPayLoad,
                                             headers={"Authorization": token,
