@@ -32,7 +32,7 @@ def test_UIChecks(page: Page):
     #identify the price column
     #identify rice row
     # extract the price of the rice.
-    page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers")
+    page.goto("https://abc.com/seleniumPractise/#/offers")
 
     for index in range(page.locator("th").count()):
         if page.locator("th").nth(index).filter(has_text="Price").count()>0:
