@@ -8,7 +8,7 @@ from utils.apiBase import APIUtils
 #-> api call from the browser-> api call contact server return back response to browser-> browser use response to generate html
 
 def interceptRequest(route):
-    route.continue_(url="https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=6711e249ae2afd4c0b9f6fb0")
+    route.continue_(url="https://abc.com/api/ecom/order/get-orders-details?id=6711e249ae2afd4c0b9f6fb0")
 
 
 
