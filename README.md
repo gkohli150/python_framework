@@ -10,7 +10,6 @@ This repository contains an end-to-end test automation framework built using [Pl
 - **Headless & Headed Mode Execution**
 - **Parallel Test Execution** using Pytest-xdist
 - **Fixtures for Setup & Teardown**
-- **Allure Report Integration**
 - **Page Object Model (POM) Structure** for better maintainability
 - **Environment-based Configurations**
 - **CI/CD Ready**: Can be integrated with Jenkins/GitHub Actions
