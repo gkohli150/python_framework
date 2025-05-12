@@ -17,7 +17,7 @@ def test_UIValidationDynamicScript(page:Page):
 
 
 def test_childWindowHandle(page:Page):
-    page.goto("https://rahulshettyacademy.com/loginpagePractise/")
+    page.goto("https://abc.com/loginpagePractise/")
 
     with page.expect_popup() as newPage_info:
         #step1
